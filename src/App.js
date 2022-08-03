@@ -79,7 +79,12 @@ function App() {
   };
 
   const showWeatherDetails = () => {
-    if (data.length === 0) {
+    if (data.length === 0 ) {
+      return;
+    }
+    if(data.cod === "404")
+    {
+      alert("The API failed to find this city, please try with different city");
       return;
     }
     if (
@@ -116,8 +121,6 @@ function App() {
     showWeatherDetails();
   }, [data]);
 
-  console.log(data);
-  console.log([data].length);
   return (
     <div className="App">
       <div className="Row">
