@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, rgb(140, 255, 255), #ffcfa3, rgb(231, 255, 124));
+}
+
+.Row{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-left: 3%;
+  min-height: 40vh;
+}
+
+ul{
+  list-style: none;
+  width: 23%;
+  margin-left: 10%;
+  z-index: 2;
+}
+li{
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  padding: 5%;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+
+#Card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  width: 50%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+.rain{
+  background-image: url('https://64.media.tumblr.com/24e3efa24029c77103684b181b15d367/tumblr_pvnozdKCJM1u7gnm9o1_500.gifv');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color:rgb(129, 255, 11);
+}
+
+
+.sunny{
+  background-image: url('https://i.gifer.com/XFbw.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.cloudy{
+  background-image: url('https://i.gifer.com/7RtV.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: whitesmoke; 
+
+}
+
+.haze, .mist{
+  background-image: url('https://thumbs.gfycat.com/AssuredScaredGrizzlybear-size_restricted.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white; 
+}
+
+h1{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 600;
+}
+
+h2{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 500;
+}
+h4{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+.rowAlign{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.blank{
+  width: 80%;
+  min-height: 60vh;
+}
+
+
+@media screen and (max-width: 600px){
+  .Row{
+    flex-direction: column;
+    min-height: 55vh;
+  }
+  #Card{
+    width: 80%;
+  }
+  #Cities{
+    width: 50%;
+  }
+}
